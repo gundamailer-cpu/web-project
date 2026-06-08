@@ -4,6 +4,7 @@ services:
     env: docker
     plan: free
     dockerfilePath: frontend/Dockerfile
+    dockerContext: frontend
     repo: https://github.com/gundamailer-cpu/web-project
 
   - type: web
@@ -11,4 +12,11 @@ services:
     env: docker
     plan: free
     dockerfilePath: backend/Dockerfile
+    dockerContext: backend
     repo: https://github.com/gundamailer-cpu/web-project
+
+  - type: database
+    name: db
+    databaseName: web_project_db
+    user: root
+    plan: free
