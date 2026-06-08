@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS web_project_db;
+USE web_project_db;
+
+CREATE TABLE IF NOT EXISTS posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL,
+    author VARCHAR(50) NOT NULL
+);
