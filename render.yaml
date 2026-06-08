@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: frontend
+    env: docker
+    dockerfilePath: frontend/Dockerfile
+    repo: https://github.com/gundamailer-cpu/web-project
+
+  - type: web
+    name: backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    repo: https://github.com/gundamailer-cpu/web-project
